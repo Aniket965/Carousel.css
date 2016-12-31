@@ -1,0 +1,21 @@
+/*slide carousel*/
+.box{
+  display: block;
+  width: 60vw;
+  height: 33.5vw;
+  //background-color: pink;
+  box-shadow: 15px 15px 40px -10px;
+  margin-left: 17vw;
+overflow: hidden;
+}
+
+.image-box{
+display: block;
+width :60vw;
+z-index: -1;
+transition: transform 1s linear ;
+}
+
+.slide-up{
+  transform: translateY(-33.75vw);
+}

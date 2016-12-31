@@ -1,5 +1,5 @@
 body{
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -105,4 +105,22 @@ right:0;
 .foot{
   text-align: center;
     font-size: 23px;
+}
+.image-box{
+
+}
+.box{
+  opacity: 0;
+  animation: slidedown 2s forwards 300ms;
+}
+@keyframes slidedown {
+0%{
+  opacity: 0;
+  transform: translateX(30vw);
+}
+100%{
+  opacity: 1;
+  transform: translateX(0vw);
+
+}
 }
