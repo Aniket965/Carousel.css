@@ -5,7 +5,7 @@ setInterval(function(){
 setclass(i);
 }, 3000);
 $('div:nth-child(1)').addClass('fade-up');
-$('.slide-type-button').click(function(){
+$('.slide-button').click(function(){
 setclass(i);
 });
 function setclass(j){

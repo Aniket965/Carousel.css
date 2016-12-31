@@ -6,7 +6,7 @@ $('document').ready(function(){
   setInterval(function(){
 setclass(clickno);
   	  },3000);
-  $('.slide-type-button').click(function(){
+  $('.slide-button').click(function(){
 setclass(clickno);
 });
 function setclass(clickno1){if(clickno1<168){
