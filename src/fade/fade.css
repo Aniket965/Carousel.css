@@ -1,0 +1,25 @@
+/*slide carousel*/
+.box{
+  display: block;
+  position: relative;
+  width: 60vw;
+  height: 33.5vw;
+  //background-color: pink;
+  box-shadow: 15px 15px 40px -10px;
+  margin-left: 17vw;
+  overflow: hidden;
+}
+
+.image-box{
+position: absolute;
+top:0;
+width :60vw;
+height: 33.75vw;
+z-index: -1;
+opacity: 0;
+transition: opacity 1s linear ;
+}
+
+.fade-up{
+ opacity: 1;
+}
