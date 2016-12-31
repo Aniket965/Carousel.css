@@ -93,8 +93,8 @@ top: 2vh!important;
 footer{
   display: block;
   /*background-color: pink;*/
-cursor: pointer;
-  margin-top: 0;
+  cursor: pointer;
+  margin-top: 0vh;
   font-family: 'Indie Flower', cursive;
 left: 0;
 right:0;

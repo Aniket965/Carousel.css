@@ -12,6 +12,7 @@ overflow: hidden;
 .image-box{
 display: block;
 width :60vw;
+height: 33.75vw;
 z-index: -1;
 transition: transform 1s linear ;
 }
