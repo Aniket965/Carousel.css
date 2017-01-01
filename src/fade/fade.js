@@ -1,38 +1,35 @@
-/*slide carousel*/
+/*fade carousel*/
 $('document').ready(function(){
-var i=2;
-setInterval(function(){
-setclass(i);
-}, 3000);
+var length =$('div.image-box').length;
 $('div:nth-child(1)').addClass('fade-up');
+var current=$('div.fade-up');
+var next;
+var i=1;
+setInterval(function(){
+setclass();
+}, 3000);
 $('.slide-button').click(function(){
-setclass(i);
+setclass();
 });
-function setclass(j){
-  if(j===2){
-    $('div:nth-child(2)').addClass('fade-up');
-   $('div:nth-child(1').removeClass('fade-up');
-   i=i+1;
-  }
-  else if(j===3){
-    $('div:nth-child(3)').addClass('fade-up');
-   $('div:nth-child(2)').removeClass('fade-up');
-   i=i+1;
-  }
-  else if(j===4){
-    $('div:nth-child(4)').addClass('fade-up');
-   $('div:nth-child(3)').removeClass('fade-up');
-   i=i+1;
-  }
-  else if(j===5){
-    $('div:nth-child(5)').addClass('fade-up');
-   $('div:nth-child(4)').removeClass('fade-up');
-   i=i+1;
+
+
+function setclass(){
+  
+    if(i!=length){
+    current=$('div.fade-up');
+    next = current.next();
+    next.addClass('fade-up');
+    current.removeClass('fade-up');
+    i+=1;
+ 
   }
   else{
-    $('div:nth-child(1)').addClass('fade-up');
-   $('div:nth-child(5)').removeClass('fade-up');
-  i=2;
+    $('div.image-box').removeClass('fade-up');
+    $('div.image-box').first().addClass('fade-up');
+    i=1;
+    
   }
+
 }
 });
+
