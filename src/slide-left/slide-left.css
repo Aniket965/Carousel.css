@@ -1,0 +1,29 @@
+/*slide-left carousel*/
+.box{
+  display: block;
+  width: 60vw;
+  height: 33.5vw;
+  //background-color: pink;
+  box-shadow: 15px 15px 40px -10px;
+  margin-left: 17vw;
+  //overflow: hidden;
+  
+  
+}
+
+.image-box{
+display: inline-block;
+width :60vw;
+height: 33.75vw;
+z-index: -1;
+	float: left!important;
+
+  //transform: translateX(-160vw);
+
+transition: transform 1s linear ;
+
+}
+
+
+.slide-up{
+}
